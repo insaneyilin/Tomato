@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <EditText
+        android:id="@+id/et_feedback_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="top"
+        android:inputType="textMultiLine" 
+        android:hint="请输入反馈，我们将为您不断改进" />
+    <EditText
+        android:id="@+id/et_feedback_email"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:inputType="textEmailAddress"
+        android:hint="请输入您的邮箱(选填)" />
+    
+    <Button 
+        android:id="@+id/btn_send_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="提交" />
+    
+</LinearLayout>

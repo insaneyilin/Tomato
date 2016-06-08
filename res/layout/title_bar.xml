@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="match_parent">
+  
+    <!-- <ImageButton
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/bt_back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        /> -->
+    <TextView
+        android:id="@+id/aboutApp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="20sp" 
+        android:text="@string/aboutapp" />
+    <TextView
+        android:id="@+id/mymoney"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:text="@string/money" />
+    <TextView
+        android:id="@+id/pet_zone"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="20sp" 
+        android:text="@string/pet_zone"/>
+  <!--   <ImageButton
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/bt_pet_zone"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:text="@string/pet_zone"
+        /> -->
+    
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/layout_pet_zone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="#FF0100"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_launcher" />
+
+    <ProgressBar
+        android:id="@+id/pbar_hp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_avatar"
+        android:layout_gravity="top"
+        android:layout_toRightOf="@+id/iv_avatar"
+        android:max="100"
+        android:progress="0" />
+
+    <ProgressBar
+        android:id="@+id/pbar_xp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pbar_hp"
+        android:layout_below="@+id/pbar_hp"
+        android:layout_marginTop="15dp"
+        android:max="100"
+        android:progress="0" />
+
+    <Button
+        android:id="@+id/btn_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Shop" />
+
+    <Button
+        android:id="@+id/btn_stats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Stats" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_stats"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/btn_stats"
+        android:layout_below="@+id/iv_avatar"
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical" >
+
+        <lecho.lib.hellocharts.view.ColumnChartView
+            android:id="@+id/columchart"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:clickable="false"
+            android:longClickable="false" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_lastweek_chart"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="上周" />
+
+            <TextView
+                android:id="@+id/tv_chart_week"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="本周"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_nextweek_chart"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="下周" />
+            
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_stats"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/btn_stats"
+        android:layout_below="@+id/iv_avatar"
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp" >
+    </ListView>
+
+</RelativeLayout>
